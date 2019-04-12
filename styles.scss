@@ -1,0 +1,10 @@
+.product-landing-wrapper {
+  display: grid;
+  grid-template-columns: 26% 48% 26%;
+  text-align: center;
+}
+
+.sticky-wrapper {
+  position: sticky;
+  top: 0px;
+}
