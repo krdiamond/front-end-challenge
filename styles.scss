@@ -12,9 +12,6 @@ $screen-md-max:                       ($screen-md - 1);
 $screen-lg-max:                       ($screen-lg - 1);
 $screen-xl-max:                       ($screen-xl - 1);
 
-$header-text-color:                   #333333;
-$sub-header-text-color:               #FFFFFF;
-
 //-------------------------------- GENERAL -----------------------------------//
 
 
@@ -41,7 +38,7 @@ $sub-header-text-color:               #FFFFFF;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
-  grid-gap: 50px 100px;
+  grid-gap: 50px 150px;
   text-align: center;
   max-width: 900px;
   margin: 36px auto;
