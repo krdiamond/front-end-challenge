@@ -12,9 +12,28 @@ $screen-md-max:                       ($screen-md - 1);
 $screen-lg-max:                       ($screen-lg - 1);
 $screen-xl-max:                       ($screen-xl - 1);
 
+// colors
+$background-color:                    #f8f8f9;
+
 //-------------------------------- GENERAL -----------------------------------//
 
+@font-face{
+  font-family: 'Graphik-Medium';
+  src:url('assets/fonts/Graphik-Medium.ttf');
+}
 
+body {
+  font-family: 'Graphik-Medium';
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  text-align: left;
+}
 
 //---------------------------- PRODUCT LANDING -------------------------------//
 
@@ -22,14 +41,27 @@ $screen-xl-max:                       ($screen-xl - 1);
   display: grid;
   grid-template-columns: 26% 48% 26%;
   text-align: center;
+  background: $background-color;
+  padding: 0 10%;
   img {
     width: 100%;
+  }
+  h1 {
+    font-size: 24px;
   }
 }
 
 .sticky-wrapper {
   position: sticky;
   top: 0px;
+  padding: 50% 0;
+  .right {
+
+  }
+}
+
+.product-description-wrapper, .product-purchase-wrapper {
+
 }
 
 //----------------------------- PRODUCT PAGES --------------------------------//
