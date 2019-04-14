@@ -43,7 +43,7 @@ h2 {
   line-height: 1.75;
   margin-bottom: 24px;
   font-weight: 100;
-  @media (max-width: $screen-xl) { //1280px
+  @media (max-width: $screen-xl)  { //1280px
     font-size: 1.2vw;
   }
 }
@@ -72,15 +72,6 @@ a {
     max-height: 95vh;
     min-width: 50%;
     max-width: 100%;
-    // @media (max-width: $screen-xxl) { //1440px
-    //   max-height: 80vh;
-    // }
-    // @media (max-width: $screen-xl) { //1280px
-    //   max-height: 75vh;
-    // }
-    // @media (max-width: $screen-lg) {
-    //   max-height: 60vh;
-    // }
   }
 }
 
@@ -181,19 +172,27 @@ a {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
-  grid-gap: 50px 150px;
+  grid-gap: 50px 12%;
   text-align: center;
-  max-width: 900px;
   margin: 36px auto 150px;
-  @media (max-width: $screen-xl) { //1280px
-    margin: 36px 12% 150px;
+  @media (max-width: $screen-sm) { //576px
+    grid-template-columns: auto;
+    margin: 36px 10%;
   }
   img {
     max-height: 600px;
     max-width: 600px;
-    @media (max-width: $screen-xxl) { //1280px
+    @media (max-width: $screen-xxl) { //1440px
       max-height: 400px;
       max-width: 400px;
+    }
+    @media (max-width: $screen-md) { //1440px
+      max-height: 250px;
+      max-width: 250px;
+    }
+    @media (max-width: $screen-sm) { //1440px
+      max-height: 585px;
+      max-width: 100%;
     }
   }
   h1 {
@@ -203,22 +202,40 @@ a {
 
 .horizontal {
   padding: 16% 0;
+  @media (max-width: $screen-sm) { //576px
+    padding: 0;
+  }
 }
 
 #product-3 {
   grid-column: 1 / 3;
+  @media (max-width: $screen-sm) { //576px
+    grid-column: unset;
+  }
   .product-3-wrapper {
     width: 50%;
     margin: auto;
+    @media (max-width: $screen-sm) { //576px
+      width: unset;
+    }
   }
 }
 
 .product-link {
   margin: 18px 0 6px;
   letter-spacing: 1.5px;
+  @media (max-width: $screen-sm)  { //1280px
+    font-size: 10px;
+    margin: 18px 0 0;
+  }
 }
 
 .product-description {
   font-size: 12px;
   text-align: left;
+  font-weight: 100;
+  @media (max-width: $screen-sm)  { //1280px
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
 }
