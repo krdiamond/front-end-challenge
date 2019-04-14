@@ -11,6 +11,31 @@ $(document).ready(function(){
     centerMode: true,
   });
 
+// ------------------------------ ZOOM FUNCTION ----------------------------- //
+  $('.product-image-wrapper-desktop').click(function(){
+    $('.product-image-wrapper-desktop').clone().prependTo(".zoom");
+  });
+
+  $('.zoom').click(function(){
+    $('.zoom').empty();
+  });
+
+// ----------------------------- COLOR SELECTOR ----------------------------- //
+
+var tick = $('.black .tick').html();
+
+$('.beige').click(function(){
+
+  $('.black .tick').empty();
+  $('.beige .tick').append(tick);
+
+});
+
+$('.black').click(function(){
+  $('.beige .tick').empty();
+  $('.black .tick').append(tick);
+});
+
 // ---------------------------- QUANTITY SELECTOR --------------------------- //
 
 $('.plus').click(function(){
@@ -28,14 +53,17 @@ $('.minus').click(function(){
   }
 });
 
-// ------------------------------ ZOOM FUNCTION ----------------------------- //
-  $('.product-image-wrapper-desktop').click(function(){
-    $('.product-image-wrapper-desktop').clone().prependTo(".zoom");
-  });
+// ----------------------------- SIZE SELECTOR ------------------------------ //
 
-  $('.zoom').click(function(){
-    $('.zoom').empty();
-  });
+$('.size').click(function(){
+  $('.dropdown-content').toggle();
+});
+
+var size = $('.size-choice').text();
+
+$('.size li').click(function(){
+  $('.size-choice').text($(this).text())
+});
 
 
 });

@@ -136,22 +136,23 @@ a {
     padding: 6px 3%;
   }
 }
-.color-buttons .black {
+.color-buttons .black, .color-buttons .beige {
   background: black;
   color: white;
+  cursor: pointer;
 }
-.color-buttons .black img {
+.color-buttons .black img, .color-buttons .beige img {
   height: 1.3vw;
   margin: -8% 0;
   min-width: unset;
 }
 @media (max-width: 1280px) {
-  .color-buttons .black img {
+  .color-buttons .black img, .color-buttons .beige img {
     margin: -4% 0;
   }
 }
 @media (max-width: 576px) {
-  .color-buttons .black img {
+  .color-buttons .black img, .color-buttons .beige img {
     height: 6vw;
     margin: -8% 0;
     min-width: unset;
@@ -162,7 +163,7 @@ a {
 }
 
 .quantity .selector {
-  padding: 6px 6%;
+  padding: 2px 6%;
   line-height: 2;
 }
 .quantity .quantity-counter {
@@ -175,14 +176,30 @@ a {
   border-left: 1px solid black;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin: 25px 0;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  background-color: #f9f9f9;
+  left: 0;
+  list-style-type: none;
+  z-index: 1;
+  width: 99%;
+}
+.dropdown-content li {
+  border-bottom: 1px solid;
+  padding: 12px 6%;
+}
+
 .size .size-choice {
-  padding: 6px 24px;
+  padding: 6px 6%;
 }
 .size .dropdown {
-  border-left: 1px solid black;
+  padding: 0 6%;
 }
 .size .dropdown .carrot {
-  padding: 0px 12px;
   line-height: 2;
   transform: scale(2, 1);
 }
