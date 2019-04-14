@@ -34,6 +34,9 @@ h1 {
   text-align: left;
   margin-bottom: 28px;
   font-weight: 900;
+  @media (max-width: $screen-sm)  { //1280px
+    margin-bottom: 18px
+  }
 }
 
 h2 {
@@ -45,6 +48,10 @@ h2 {
   font-weight: 100;
   @media (max-width: $screen-xl)  { //1280px
     font-size: 1.2vw;
+  }
+  @media (max-width: $screen-sm)  { //1280px
+    font-size: 10px;
+    margin-bottom: 18px
   }
 }
 
@@ -73,13 +80,39 @@ a {
     min-width: 50%;
     max-width: 100%;
   }
+  @media (max-width: $screen-sm)  { //1280px
+    display: block;
+  }
 }
+
+.product-image-wrapper-desktop{
+  @media (max-width: $screen-sm)  { //1280px
+    display: none;
+  }
+}
+
+.product-image-wrapper-mobile{
+  display: none !important;
+  @media (max-width: $screen-sm)  { //1280px
+    display: block !important;
+  }
+}
+
 
 .sticky-wrapper {
   position: sticky;
   top: 0px;
   padding: 50% 0 100%;
   height: 316px;
+  @media (max-width: $screen-sm)  { //1280px
+    position: relative;
+    height: auto;
+    padding: 0;
+  }
+}
+
+.product-description-wrapper {
+  padding: 24px 0;
 }
 
 

@@ -3,14 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Title</title>
+    <title>Front-End-Challenge - Kristina Diamond</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
   </head>
 
   <body>
 
     <div class="top-section">
       <div class="product-landing-wrapper">
+
+        <div class="product-image-wrapper-mobile">
+          <div><img src="./assets/top-section-images/highwaist_black_front_2_1024x1024.jpg" alt="Highwaist Black"></div>
+          <div><img src="./assets/top-section-images/highwaist_black_front_3_1024x1024.jpg" alt="Highwaist Black"></div>
+          <div><img src="./assets/top-section-images/highwaist_black_front_4_1024x1024.jpg" alt="Highwaist Black"></div>
+          <div><img src="./assets/top-section-images/highwaist_black_front_1024x1024.jpg" alt="Highwaist Black"></div>
+          <div><img src="./assets/top-section-images/highwaist_black_side_1024x1024.jpg" alt="Highwaist Black"></div>
+          <div><img src="./assets/top-section-images/highwaist_black_back_1024x1024.jpg" alt="Highwaist Black"></div>
+        </div>
 
         <div class="product-description-wrapper">
           <div class="sticky-wrapper left">
@@ -20,7 +31,7 @@
           </div>
         </div>
 
-        <div class="product-image-wrapper">
+        <div class="product-image-wrapper-desktop">
           <img src="./assets/top-section-images/highwaist_black_front_2_1024x1024.jpg" alt="Highwaist Black">
           <img src="./assets/top-section-images/highwaist_black_front_3_1024x1024.jpg" alt="Highwaist Black">
           <img src="./assets/top-section-images/highwaist_black_front_4_1024x1024.jpg" alt="Highwaist Black">
@@ -34,7 +45,7 @@
             <h1 class="price">$35.00</h1>
             <div class="color-buttons flex">
               <div class="color">color</div>
-              <div class="color black">black  <span class="check">✔</span></div>
+              <div class="color black">black  <span class="check"><img src="https://cdn.shopify.com/s/files/1/0578/7201/files/icon-check.svg?412249" alt="Black"></span></div>
               <div class="color beige">beige</div>
             </div>
             <div class="quantity flex">
@@ -89,8 +100,19 @@
         <a href="#"><h2 class="product-link">Shop Boyshort</h2></a>
         <div class="product-description">light days</div>
       </div>
-
     </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.product-image-wrapper-mobile').slick({
+          dots: true,
+          slidesToShow: 1,
+        });
+      });
+    </script>
 
   </body>
 </html>
