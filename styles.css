@@ -111,10 +111,10 @@ a {
 .flex {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
   border: 1px solid black;
   margin-bottom: 24px;
   text-align: left;
+  font-size: 14px;
 }
 @media (max-width: 1280px) {
   .flex {
@@ -179,20 +179,46 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
-  margin: 25px 0;
   border-right: 1px solid;
   border-left: 1px solid;
   background-color: #f9f9f9;
   left: 0;
   list-style-type: none;
   z-index: 1;
-  width: 99%;
+  margin-top: -12px;
+  width: 99.5%;
+}
+@media (max-width: 1100px) {
+  .dropdown-content {
+    width: 99%;
+  }
+}
+@media (max-width: 768px) {
+  .dropdown-content {
+    width: 98.5%;
+  }
 }
 .dropdown-content li {
   border-bottom: 1px solid;
   padding: 12px 6%;
+  text-align: left;
+  font-size: initial;
+  font-size: 14px;
+}
+@media (max-width: 1280px) {
+  .dropdown-content li {
+    font-size: 1vw;
+  }
+}
+@media (max-width: 576px) {
+  .dropdown-content li {
+    font-size: 3.8vw;
+  }
 }
 
+.size {
+  margin-bottom: 12px;
+}
 .size .size-choice {
   padding: 6px 6%;
 }
@@ -210,12 +236,18 @@ a {
   text-align: left;
   font-weight: 100;
 }
+@media (max-width: 1280px) and (min-width: 576px) {
+  .size-link {
+    font-size: 0.8vw;
+  }
+}
 
 .add-to-cart {
   text-align: center;
   background: black;
   color: white;
   padding: 6px 24px;
+  margin-top: 36px;
 }
 @media (max-width: 576px) {
   .add-to-cart {
@@ -225,6 +257,11 @@ a {
 
 .cycle-link {
   font-size: 14px;
+}
+@media (max-width: 1440px) {
+  .cycle-link {
+    font-size: 12px;
+  }
 }
 @media (max-width: 1280px) {
   .cycle-link {

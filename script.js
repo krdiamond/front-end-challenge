@@ -61,8 +61,9 @@ $('.size').click(function(){
 
 var size = $('.size-choice').text();
 
-$('.size li').click(function(){
+$('.dropdown-content li').click(function(){
   $('.size-choice').text($(this).text())
+
 });
 
 
