@@ -88,6 +88,7 @@ a {
 }
 
 .product-image-wrapper-desktop{
+  cursor: zoom-in;
   @media (max-width: $screen-sm)  { //1280px
     display: none;
   }
@@ -121,7 +122,7 @@ a {
 .flex {
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 14px;
   border: 1px solid black;
   margin-bottom: 24px;
   text-align: left;
@@ -145,8 +146,17 @@ a {
     background: black;
     color: white;
     img {
-      height: 14px;
-      margin: -3px 0;
+      height: 1.3vw;
+      margin: -8% 0;
+      min-width: unset;
+      @media (max-width: $screen-xl) { //1280px
+        margin: -4% 0;
+      }
+      @media (max-width: $screen-sm) { //1280px
+        height: 6vw;
+        margin: -8% 0;
+        min-width: unset;
+      }
     }
   }
   .beige {
@@ -156,7 +166,7 @@ a {
 
 .quantity {
   .selector {
-    padding: 0 12px;
+    padding: 6px 6%;
     line-height: 2;
   }
   .quantity-counter {
@@ -206,7 +216,10 @@ a {
   @media (max-width: $screen-xl) { //1280px
     font-size: 1vw;
   }
-  @media (max-width: $screen-sm) { //1280px
+  @media (max-width: $screen-lg) { //1280px
+    font-size: .8vw;
+  }
+  @media (max-width: $screen-sm) { //576px
     font-size: 3.2vw;
     text-align: center;
     margin: auto;
@@ -286,4 +299,22 @@ a {
     font-size: 8px;
     letter-spacing: 1px;
   }
+}
+
+//--------------------------------- ZOOM -------------------------------------//
+
+.zoom .product-image-wrapper-desktop {
+  position: absolute;
+  z-index: 1;
+  cursor: zoom-out;
+  img {
+    width: 100%;
+    margin: -2px;
+    pointer-events: none;
+  }
+}
+//---------------------------- SLICK OVERRIDE --------------------------------//
+
+.slick-dots li {
+  margin: 0 4px !important;
 }
