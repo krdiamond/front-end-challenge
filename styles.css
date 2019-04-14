@@ -159,8 +159,14 @@ a {
   }
 }
 .product-pages-wrapper img {
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 600px;
+  max-width: 600px;
+}
+@media (max-width: 1440px) {
+  .product-pages-wrapper img {
+    max-height: 400px;
+    max-width: 400px;
+  }
 }
 .product-pages-wrapper h1 {
   text-align: left;

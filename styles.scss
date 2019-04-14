@@ -189,8 +189,12 @@ a {
     margin: 36px 12% 150px;
   }
   img {
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 600px;
+    max-width: 600px;
+    @media (max-width: $screen-xxl) { //1280px
+      max-height: 400px;
+      max-width: 400px;
+    }
   }
   h1 {
     text-align: left;
