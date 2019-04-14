@@ -1,39 +1,124 @@
 @font-face {
   font-family: "Graphik-Medium";
   src: url("assets/fonts/Graphik-Medium.ttf");
+  font-weight: 100, 300, 900;
+  font-style: normal;
 }
 body {
   font-family: "Graphik-Medium";
+  margin: 0;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-}
-
-.left {
+h1 {
+  letter-spacing: 4px;
   text-align: left;
+  margin-bottom: 28px;
+  font-weight: 900;
+}
+
+h2 {
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.75;
+  margin-bottom: 24px;
+  font-weight: 100;
+}
+
+.top-section {
+  background: #f8f8f9;
 }
 
 .product-landing-wrapper {
   display: grid;
   grid-template-columns: 26% 48% 26%;
   text-align: center;
-  background: #f8f8f9;
-  padding: 0 10%;
+  font-size: 6px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 36px;
 }
 .product-landing-wrapper img {
   width: 100%;
 }
-.product-landing-wrapper h1 {
-  font-size: 24px;
+@media (max-width: 1280px) {
+  .product-landing-wrapper {
+    max-width: unset;
+    margin: 0 10%;
+  }
 }
 
 .sticky-wrapper {
   position: sticky;
   top: 0px;
-  padding: 50% 0;
+  padding: 50% 0 100%;
+  height: 316px;
 }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  border: 1px solid black;
+  margin-bottom: 24px;
+}
+
+.color-buttons .color {
+  padding: 6px 24px;
+}
+.color-buttons .black {
+  background: black;
+  color: white;
+}
+.color-buttons .beige {
+  background: #f2d9a5;
+}
+
+.quantity .selector {
+  padding: 0 12px;
+  line-height: 2;
+}
+.quantity .quantity-counter {
+  padding: 6px 24px;
+}
+.quantity .minus {
+  border-right: 1px solid black;
+}
+.quantity .plus {
+  border-left: 1px solid black;
+}
+
+.size .size-choice {
+  padding: 6px 24px;
+}
+.size .dropdown {
+  border-left: 1px solid black;
+}
+.size .dropdown .carrot {
+  padding: 0px 12px;
+  line-height: 2;
+  transform: scale(2, 1);
+}
+
+.size-link {
+  text-decoration: underline;
+  font-size: 10px;
+  text-align: left;
+  font-weight: 100;
+}
+
+.add-to-cart {
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 6px 24px;
+}
+
+.cycle-link {
+  text-decoration: underline;
+  font-size: 14px;
+}
+
 .product-pages-wrapper {
   display: grid;
   grid-template-columns: auto auto;
@@ -51,6 +136,9 @@ body {
 .product-pages-wrapper img {
   max-height: 400px;
   max-width: 400px;
+}
+.product-pages-wrapper h1 {
+  text-align: left;
 }
 
 .product-3 {
