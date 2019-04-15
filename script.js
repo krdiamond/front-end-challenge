@@ -18,8 +18,9 @@ $(document).ready(function(){
 //User can click on the featured image to zoom in.
 //Image will take up the whole screen top to bottom, left to right.
 
-  $('.product-image-wrapper-desktop').click(function(){
-    $('.product-image-wrapper-desktop').clone().prependTo(".zoom");
+  $('.product-scrolling-image-wrapper-desktop').click(function(){
+    console.log('clicked');
+    $('.product-scrolling-image-wrapper-desktop').clone().prependTo(".zoom");
   });
 
   $('.zoom').click(function(){
@@ -33,7 +34,7 @@ $(document).ready(function(){
   var tick = $('.black .tick').html();
 
   $('.beige').click(function(){
-
+    $('.beige .tick').empty();
     $('.black .tick').empty();
     $('.beige .tick').append(tick);
 
@@ -41,6 +42,7 @@ $(document).ready(function(){
 
   $('.black').click(function(){
     $('.beige .tick').empty();
+    $('.black .tick').empty();
     $('.black .tick').append(tick);
   });
 

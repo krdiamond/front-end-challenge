@@ -374,15 +374,16 @@ a {
   }
 }
 
-.zoom .product-image-wrapper-desktop {
+.zoom .product-scrolling-image-wrapper-desktop {
   position: absolute;
   z-index: 1;
   cursor: zoom-out;
 }
-.zoom .product-image-wrapper-desktop img {
+.zoom .product-scrolling-image-wrapper-desktop img {
   width: 100%;
   margin: -2px;
   pointer-events: none;
+  padding: 0;
 }
 
 .slick-dots li {
